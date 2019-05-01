@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sass - Exercice pratique</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/select.css">
+
+</head>
+
+<body>
+	<h1>Sassify Me!</h1>
+	<p>L'objectif ici est de passer des fichiers originaux CSS, à un ou plusieurs fichiers Sass/SCSS
+		valides. Évidemment, le résultat final doit être identique au résultat obtenu avec le
+		fichier CSS original.</p>
+	<select name="" id="languages" data-placeholder="Choisir un language">
+		<option value=""></option>
+		<optgroup label="Frontend">
+			<option value="javascript">CSS</option>
+			<option value="javascript">HTML</option>
+			<option value="javascript">JavaScript</option>
+		</optgroup>
+		<optgroup label="Backend">
+			<option value="ruby">Ruby</option>
+			<option value="python">Python</option>
+			<option value="php">PHP</option>
+			<option value="java">Java</option>
+			<option value="asp" disabled>ASP .NET</option>
+		</optgroup>
+		<optgroup label="Autres?">
+			<option value="objective-c">Objective C</option>
+		</optgroup>
+	</select>
+	<script src="js/jquery-1.10.0.min.js"></script>
+	<script src="js/chosen.jquery.js"></script>
+	<script>
+		$('#languages').chosen();
+	</script>
+</body>
+
+</html>
